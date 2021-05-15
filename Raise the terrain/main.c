@@ -33,6 +33,7 @@ int main(int argc, char **argv)
         draw_grid(&terrain);
         SDL_RenderPresent(terrain.renderer);
     }
+    
     /* Execute a cleanup */
     cleanup(&terrain);
     return (EXIT_SUCCESS);
