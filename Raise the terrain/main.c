@@ -29,7 +29,7 @@ int main(int argc, char **argv)
         SDL_RenderClear(terrain.renderer);
         if (key_events(&terrain) == 1)
             break;
-        SDL_SetRenderDrawColor(terrain.renderer, 255, 255, 255, 255);
+        SDL_SetRenderDrawColor(terrain.renderer, 255, 0, 255, 255);
         draw_grid(&terrain);
         SDL_RenderPresent(terrain.renderer);
     }

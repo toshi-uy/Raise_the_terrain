@@ -14,18 +14,25 @@ int key_events(raise_t *terrain)
     
     while(SDL_PollEvent(&event))
     {
-        if (event.type == SDL_QUIT || event.type == SDL_SCANCODE_ESCAPE)
+        if (event.type == SDL_QUIT)
             return (1);
-/*        if (event.type == SDL_SCANCODE_LEFT)
-        {    rotate_grid(terrain, 1);
-            break;
-        }
-        if (event.type == SDL_SCANCODE_RIGHT)
+        if (event.type == SDL_KEYDOWN)
         {
-            rotate_grid(terrain, -1);
-            break;
+            if (event.key.keysym.scancode == SDL_SCANCODE_ESCAPE)
+            {
+                return (1);
+            }
+            else if (event.key.keysym.scancode == SDL_SCANCODE_LEFT)
+            {
+                rotate_grid(terrain, 1);
+                break;
+            }
+            else if (event.key.keysym.scancode == SDL_SCANCODE_RIGHT)
+            {
+                rotate_grid(terrain, -1);
+                break;
+            }
         }
- */
         else
             return (0);
     }

@@ -14,6 +14,8 @@
 		99CF68512650750200C730DE /* process_data.c in Sources */ = {isa = PBXBuildFile; fileRef = 99CF68502650750200C730DE /* process_data.c */; };
 		99CF68542650758F00C730DE /* cleanup.c in Sources */ = {isa = PBXBuildFile; fileRef = 99CF68532650758F00C730DE /* cleanup.c */; };
 		99CF685826507B2600C730DE /* draw_grid.c in Sources */ = {isa = PBXBuildFile; fileRef = 99CF685726507B2600C730DE /* draw_grid.c */; };
+		99CF685C265081D800C730DE /* key_events.c in Sources */ = {isa = PBXBuildFile; fileRef = 99CF685B265081D800C730DE /* key_events.c */; };
+		99CF687026517DBE00C730DE /* rotate_grid.c in Sources */ = {isa = PBXBuildFile; fileRef = 99CF686F26517DBE00C730DE /* rotate_grid.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,6 +40,9 @@
 		99CF68502650750200C730DE /* process_data.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = process_data.c; sourceTree = "<group>"; };
 		99CF68532650758F00C730DE /* cleanup.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = cleanup.c; sourceTree = "<group>"; };
 		99CF685726507B2600C730DE /* draw_grid.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = draw_grid.c; sourceTree = "<group>"; };
+		99CF685B265081D800C730DE /* key_events.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = key_events.c; sourceTree = "<group>"; };
+		99CF68602651712B00C730DE /* test */ = {isa = PBXFileReference; lastKnownFileType = text; path = test; sourceTree = "<group>"; };
+		99CF686F26517DBE00C730DE /* rotate_grid.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = rotate_grid.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +60,9 @@
 		99779198264744A000816250 = {
 			isa = PBXGroup;
 			children = (
+				99CF686F26517DBE00C730DE /* rotate_grid.c */,
+				99CF68602651712B00C730DE /* test */,
+				99CF685B265081D800C730DE /* key_events.c */,
 				99CF68492650623100C730DE /* initiate_terrain.c */,
 				997791A4264744A000816250 /* main.c */,
 				99CF6843265055F900C730DE /* raise.h */,
@@ -62,7 +70,6 @@
 				99CF68502650750200C730DE /* process_data.c */,
 				99CF68532650758F00C730DE /* cleanup.c */,
 				99CF685726507B2600C730DE /* draw_grid.c */,
-				997791A3264744A000816250 /* Raise the terrain */,
 				997791A2264744A000816250 /* Products */,
 				997791AC2647456400816250 /* Frameworks */,
 			);
@@ -74,13 +81,6 @@
 				997791A1264744A000816250 /* Raise the terrain */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		997791A3264744A000816250 /* Raise the terrain */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Raise the terrain";
 			sourceTree = "<group>";
 		};
 		997791AC2647456400816250 /* Frameworks */ = {
@@ -148,6 +148,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				99CF684A2650623100C730DE /* initiate_terrain.c in Sources */,
+				99CF685C265081D800C730DE /* key_events.c in Sources */,
+				99CF687026517DBE00C730DE /* rotate_grid.c in Sources */,
 				99CF685826507B2600C730DE /* draw_grid.c in Sources */,
 				997791A5264744A000816250 /* main.c in Sources */,
 				99CF684E26506D8F00C730DE /* parsing.c in Sources */,
@@ -163,6 +165,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				Arguments = "";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -222,6 +225,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				Arguments = "";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

@@ -12,6 +12,7 @@ int parsing(raise_t *terrain)
 {
     FILE *file;
     char *buffer = NULL, *token;
+    size_t num = 0;
     int i;
     
     if (terrain->filename == NULL)
@@ -27,7 +28,7 @@ int parsing(raise_t *terrain)
             return (1);
     }
     /* Getting Size */
-    for (; fgets(buffer, 1024, file) != NULL; terrain->rows++)
+    for (; getline(&buffer, &num, file) != -1; terrain->rows++)
         if (terrain->rows == 0)
         {
             token = strtok(buffer, " \n");
@@ -52,6 +53,7 @@ int parsing(raise_t *terrain)
             return (1);
         }
     }
+    free(buffer);
     fclose(file);
     process_data(terrain);
     return (0);
