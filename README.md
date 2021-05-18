@@ -4,7 +4,7 @@ width=100% alt="title">
 
 ###  Optional task working with SDL2 to create 3D projections (intro to game programming) using C programming language and SDL libraries
 
-<img src="https://i.imgur.com/fzp4Slr.mp4"
+<img src="https://i.imgur.com/VkjlNIM.mp4"
 width=50% alt="rotation">
 
 ## Introduction
