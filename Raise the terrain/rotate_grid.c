@@ -11,13 +11,13 @@
 void rotate_grid(raise_t *terrain, int angle)
 {
     int i, j;
-    float x, y, z, Cx, Cy;
+    float x, y, Cx, Cy;
     float a, Rx, Ry;
-    
+
     a = angle * M_PI / 180;
     Cx = WIDTH / 4;
     Cy = HEIGHT / 3;
-    
+
     for (i = 0; i < terrain->rows; i++)
         for (j = 0; j < terrain->columns; j++)
         {
