@@ -54,6 +54,7 @@ The program needs a \<file> that contains the grid altitudes and the same grid a
     00 00 00 00 00 00 00 00 00 00 00
     
 This will create a 10 x 10 grid all flat (11 dots are 10 boxes):
+
 <img src="https://i.imgur.com/OEZUckR.png" width="400px">
 
 Or try the one in our task:
@@ -70,6 +71,7 @@ the following altitudes,
 30 24 24 22 20 18 14 16
 ```
 the grid should look like this:
+
 <img src="https://i.imgur.com/HMPbl98.png" width="400px">
 
 I challenge you to use different altitude and create your own grids! Have fun!!
