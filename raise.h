@@ -12,8 +12,8 @@
 #include <math.h>
 
 /* Defining MACROS */
-#define WIDTH 1000
-#define HEIGHT 1000
+#define WIDTH 800
+#define HEIGHT 800
 
 /* Creating the structures used in all the program */
 
@@ -71,5 +71,6 @@ void process_data(raise_t *terrain);
 int key_events(raise_t *terrain);
 void draw_grid(raise_t *terrain);
 void cleanup(raise_t *terrain);
+void rotate_grid(raise_t *terrain, int angle);
 
 #endif /* raise_h */

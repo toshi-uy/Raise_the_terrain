@@ -14,8 +14,8 @@ void draw_grid(raise_t *terrain)
     float incl = 0.7;
     float Cx, Cy;
 
-    Cx = WIDTH / 2.2;
-    Cy = HEIGHT / 3.2;
+    Cx = WIDTH / 2;
+    Cy = HEIGHT / 3;
     
     for (i = 0; i < terrain->rows; i++)
     {

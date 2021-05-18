@@ -25,14 +25,15 @@ int main(int argc, char **argv)
         return (EXIT_FAILURE);
     while ("looping")
     {
-        SDL_SetRenderDrawColor(terrain.renderer, 0, 0, 0, 0);
+        SDL_SetRenderDrawColor(terrain.renderer, 30, 30, 30, 0);
         SDL_RenderClear(terrain.renderer);
         if (key_events(&terrain) == 1)
             break;
-        SDL_SetRenderDrawColor(terrain.renderer, 255, 255, 255, 255);
+        SDL_SetRenderDrawColor(terrain.renderer, 200, 0, 200, 255);
         draw_grid(&terrain);
         SDL_RenderPresent(terrain.renderer);
     }
+    
     /* Execute a cleanup */
     cleanup(&terrain);
     return (EXIT_SUCCESS);
