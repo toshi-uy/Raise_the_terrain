@@ -4,8 +4,7 @@ width=100% alt="title">
 
 ###  Optional task working with SDL2 to create 3D projections (intro to game programming) using C programming language and SDL libraries
 
-<img src="https://i.imgur.com/VkjlNIM.mp4"
-width=50% alt="rotation">
+<img src="https://i.imgur.com/3zljnCS.mp4" width=60% alt="rotation">
 
 ## Introduction
 This is an optional task in my Holberton Software Developer Foundations Course I'm taking. The first trick is to install the SDL2 libraries to your computer, I used macOS and xCode to code all the files in C programming language. Then just compile it with the correct flags and run it in an environment with video enabled (I runned it on Mac's terminal, but you can use a vagrant environment with video enabled it. I'll leave you this tutorial to do so: https://rleons.medium.com/how-to-use-sdl2-library-in-a-vagrant-environment-ccd8d8872e78).
